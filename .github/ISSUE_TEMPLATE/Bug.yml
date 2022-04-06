@@ -2,7 +2,6 @@ name: Bug
 description: For general issues that don't fit into another category
 title: "[Bug]: Country Affected - Short Description of Issue"
 labels: Bug
-assignees: ''
 
 body:
   - type: input
@@ -43,14 +42,6 @@ body:
         - 'No'
     validations:
       required: true
-  - type: input
-    id: expansion
-    attributes:
-      label: Which major expansions do you NOT have?
-      description: "Write nonone if you have all major expansions enabled."
-      placeholder: ex. TFV, DOD, NSB
-    validations:
-      required: true
   - type: dropdown
     id: expansion
     attributes:
@@ -64,6 +55,8 @@ body:
         - 'MTG'
         - 'LAR'
         - 'NSB'
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
