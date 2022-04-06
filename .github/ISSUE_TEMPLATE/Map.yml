@@ -1,7 +1,8 @@
-name: Crash to Desktop
-about: For issues that cause the game to crash to desktop (CTD)
-title: "Country Affected - Short Description of Issue"
-labels: Crash
+**Screenshots:**
+name: Map
+description: For issues relating to the map, unit placements, and victory point locations
+title: "[Bug]: Country Affected - Short Description of Issue"
+labels: Bug
 assignees: ''
 
 body:
@@ -34,47 +35,62 @@ body:
       placeholder: ex. Custom Country Paths Mod
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: steam
     attributes:
       label: Were you using Steam?
-      placeholder: Yes / No
+      options:
+        - 'Yes'
+        - 'No'
     validations:
       required: true
-  - type: input
-    id: expansion
-    attributes:
-      label: Which major expansions do you NOT have?
-      description: "Write nonone if you have all major expansions enabled."
-      placeholder: ex. TFV, DOD, NSB
-    validations:
-      required: true
+  - type: dropdown
+  id: expansion
+  attributes:
+    label: Which major expansions do you NOT have?
+    description: Click all expansions that you don't have. Use control / command to select multiple.
+    multiple: true
+    options:
+        - 'TFV'
+        - 'DOD'
+        - 'WTT'
+        - 'MTG'
+        - 'LAR'
+        - 'NSB'
   - type: textarea
     id: logs
     attributes:
       label: Log Files
-      description: "Link(s) to any log files that may help debug your crash"
+      description: "Link(s) to any log files that may help debug your issue"
       placeholder: 
     validations:
       required: false
   - type: textarea
     id: bugdesc
     attributes:
-      label: Describe the crash
+      label: Describe the bug
       description: |
-        A clear and concise description of what the crash looks like
+        A clear and concise description of what the bug is
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce / Cause of the crash
-      description: Tell us how we can reproduce the crash
+      label: Steps to reproduce / Cause of the issue
+      description: Tell us how we can reproduce the issue
       placeholder: |
         1. Go to ...  
         2. Click on ...  
         3. Scroll down to ...  
-        4. The game crashes
+        4. See error
+    validations:
+      required: true
+  - type: input
+    id: expectedBehaviour
+    attributes:
+      label: Expected behaviour
+      description: |
+        A clear and concise description of what you expected to happen.
     validations:
       required: true
   - type: textarea
