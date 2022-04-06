@@ -42,6 +42,7 @@ body:
       description: Click all expansions that you don't have. Use control / command to select multiple.
       multiple: true
       options:
+        - 'None'
         - 'TFV'
         - 'DOD'
         - 'WTT'
