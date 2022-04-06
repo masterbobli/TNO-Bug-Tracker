@@ -1,6 +1,6 @@
 name: Bug
 description: For general issues that don't fit into another category
-title: "[Bug]: Country Affected - Short Description of Issue"
+title: "Country Affected - Short Description of Issue"
 labels: Bug
 
 body:

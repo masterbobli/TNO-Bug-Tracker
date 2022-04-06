@@ -2,7 +2,6 @@ name: Localization
 about: For small issues related to spelling, grammar, and other typos. NOTE - If text is partially missing or absent entirely, please fill out a Bug issue type instead
 title: "Country Affected - Short Description of Issue"
 labels: Localization
-assignees: ''
 
 body:
   - type: input
@@ -27,12 +26,37 @@ body:
       placeholder: ex. Custom Country Paths Mod
     validations:
       required: true
+  - type: dropdown
+    id: steam
+    attributes:
+      label: Were you using Steam?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
+  - type: dropdown
+    id: expansion
+    attributes:
+      label: Which major expansions do you NOT have?
+      description: Click all expansions that you don't have. Use control / command to select multiple.
+      multiple: true
+      options:
+        - 'TFV'
+        - 'DOD'
+        - 'WTT'
+        - 'MTG'
+        - 'LAR'
+        - 'NSB'
+    validations:
+      required: true
   - type: textarea
     id: bugdesc
     attributes:
       label: List the loc issues below
       description: |
         List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown):
+        Please limit the list to 100 elements if you're reporting multiple loc issues.
       placeholder: 
         - [ ] 1. 
         (Screenshot here)

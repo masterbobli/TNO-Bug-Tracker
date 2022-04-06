@@ -2,7 +2,6 @@ name: Graphics
 about: For issues about 2D and 3D graphics, such as focus icons, unit models, and flags
 title: Country Affected - Short Description of Issue
 labels: GFX/Graphics
-assignees: ''
 
 body:
   - type: input
@@ -34,19 +33,28 @@ body:
       placeholder: ex. Custom Country Paths Mod
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: steam
     attributes:
       label: Were you using Steam?
-      placeholder: Yes / No
+      options:
+        - 'Yes'
+        - 'No'
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: expansion
     attributes:
       label: Which major expansions do you NOT have?
-      description: "Write nonone if you have all major expansions enabled."
-      placeholder: ex. TFV, DOD, NSB
+      description: Click all expansions that you don't have. Use control / command to select multiple.
+      multiple: true
+      options:
+        - 'TFV'
+        - 'DOD'
+        - 'WTT'
+        - 'MTG'
+        - 'LAR'
+        - 'NSB'
     validations:
       required: true
   - type: textarea

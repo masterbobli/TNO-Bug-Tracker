@@ -2,7 +2,6 @@ name: Map
 description: For issues relating to the map, unit placements, and victory point locations
 title: "[Bug]: Country Affected - Short Description of Issue"
 labels: Bug
-assignees: ''
 
 body:
   - type: input
@@ -56,6 +55,8 @@ body:
         - 'MTG'
         - 'LAR'
         - 'NSB'
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
