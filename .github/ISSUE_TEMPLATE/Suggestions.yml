@@ -36,14 +36,6 @@ body:
         - 'LAR'
         - 'NSB'
   - type: textarea
-    id: logs
-    attributes:
-      label: Log Files
-      description: "Link(s) to any log files that may help understand your suggestion"
-      placeholder: 
-    validations:
-      required: false
-  - type: textarea
     id: suggestiondesc
     attributes:
       label: Describe your suggestion

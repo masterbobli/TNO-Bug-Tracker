@@ -59,10 +59,14 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: files
     attributes:
-      label: Log Files
-      description: "Link(s) to any log files that may help debug your issue"
+      label: Files
+      description: |
+        Link(s) to any log files / save games that may help debug your issue.
+        The most important one is error.log
+        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs
+        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games
       placeholder: 
     validations:
       required: false
