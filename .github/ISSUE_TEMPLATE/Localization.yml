@@ -39,7 +39,7 @@ body:
     id: expansion
     attributes:
       label: Which major expansions do you NOT have?
-      description: Click all expansions that you don't have. Use control / command to select multiple.
+      description: Click all expansions that you don't have.
       multiple: true
       options:
         - 'I have all'
