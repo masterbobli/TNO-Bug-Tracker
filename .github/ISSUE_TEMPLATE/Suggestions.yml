@@ -55,12 +55,12 @@ body:
     validations:
       required: true
   - type: dropdown
-  id: expansion
-  attributes:
-    label: Which major expansions do you NOT have?
-    description: Click all expansions that you don't have. Use control / command to select multiple.
-    multiple: true
-    options:
+    id: expansion
+    attributes:
+      label: Which major expansions do you NOT have?
+      description: Click all expansions that you don't have. Use control / command to select multiple.
+      multiple: true
+      options:
         - 'TFV'
         - 'DOD'
         - 'WTT'
