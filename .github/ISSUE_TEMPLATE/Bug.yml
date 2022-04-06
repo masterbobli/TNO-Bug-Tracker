@@ -82,7 +82,7 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce / Cause of the issue
-      description: Tell us how we can reproduce the issue
+      description: Tell us how we can reproduce the issue / fix this issue
       placeholder: |
         1. Go to ...  
         2. Click on ...  

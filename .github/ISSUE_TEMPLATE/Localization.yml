@@ -68,8 +68,8 @@ body:
     attributes:
       label: List the loc issues below
       description: |
-        List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown):
-        Please limit the list to 100 elements if you're reporting multiple loc issues.
+        List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown).
+        Please limit the list to 100 issues. Create another bug report if more are found.
       placeholder: |
         - [ ] 1. 
         (Screenshot here)

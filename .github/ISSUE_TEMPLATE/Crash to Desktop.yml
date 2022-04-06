@@ -82,12 +82,12 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce / Cause of the crash
-      description: Tell us how we can reproduce the crash
+      description: Tell us how we can reproduce / fix this crash
       placeholder: |
         1. Go to ...  
         2. Click on ...  
         3. Scroll down to ...  
-        4. The game crashes
+        4. See error
     validations:
       required: true
   - type: textarea
