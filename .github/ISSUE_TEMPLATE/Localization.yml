@@ -59,9 +59,9 @@ body:
         List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown):
         Please limit the list to 100 elements if you're reporting multiple loc issues.
       placeholder: 
-        - [ ] 1. 
+        [ ] 1. 
         (Screenshot here)
-        - [ ] 2. 
+        [ ] 2. 
         (Screenshot here)
     validations:
       required: true
